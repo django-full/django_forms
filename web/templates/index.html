@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a href="{%url 'index'%}">home</a>
+<a href="{%url 'contact'%}">contact</a>
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{Forms}}
+    </table>
+    <button type="submit">KIRIM</button>
+</form>
+</body>
+</html>
